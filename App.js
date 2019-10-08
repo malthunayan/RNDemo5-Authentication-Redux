@@ -9,5 +9,9 @@ import { Provider } from "react-redux";
 import LoginForm from "./components/LoginForm";
 
 export default function App() {
-  return <LoginForm />;
+  return (
+    <Provider store={store}>
+      <LoginForm />
+    </Provider>
+  );
 }
