@@ -25,7 +25,6 @@ class LoginForm extends Component {
   };
 
   handleSubmit = type => {
-    // console.log(this.state);
     type === "login"
       ? this.props.login(this.state)
       : this.props.register(this.state);
